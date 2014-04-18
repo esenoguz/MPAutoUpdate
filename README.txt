@@ -1,0 +1,1 @@
+Çalýþmasý için pywin32-218.win32-py2.7 ve python 2.7.4 versiyonu gereklidir.
