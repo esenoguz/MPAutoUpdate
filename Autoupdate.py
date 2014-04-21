@@ -8,9 +8,13 @@ corePath = r"%s\Web\www\bin\maestropanel.web.dll" % MPpath
 MPAgentPath = "%s\Agent\MstrSvc.exe" % MPpath
 MPappPath = "%s\Web\service\MstrW3Svc.exe" % MPpath
 ver_parser = Dispatch('Scripting.FileSystemObject')
-AgentFileVer = ver_parser.GetFileVersion(r'%s'% MPAgentPath)
-MPAppFileVer = ver_parser.GetFileVersion(r'%s'% MPappPath)
-coreVer = ver_parser.GetFileVersion(r'%s'% corePath)
+
+if os.path.isfile(MPappPath):
+    MPAppFileVer = ver_parser.GetFileVersion(r'%s'% MPappPath)
+if os.path.isfile(MPAgentPath):
+    AgentFileVer = ver_parser.GetFileVersion(r'%s'% MPAgentPath)
+if os.path.isfile(corePath):
+    coreVer = ver_parser.GetFileVersion(r'%s'% corePath)
 updatesDir = "%s\updates" % MPpath
 repourl = "http://repo.maestropanel.com/A1/"
 
@@ -26,7 +30,6 @@ def check_dir(path):
         if exc.errno != errno.EEXIST:
             raise
 check_dir(updatesDir)
-
 
 urllib.urlretrieve("http://repo.maestropanel.com/A1/pyupdates.xml", ("%s\pyupdates.xml" % updatesDir))
 
@@ -50,12 +53,14 @@ for updateData in root.findall('ver'):
 def curr_vers():
     tempver = ""
     if os.path.isfile(corePath) == False:
-        print saat(), "MaestroPanel uygulamasi bulunamadi."
+        if os.path.isfile(MPAgentPath) == True:
+            for i in verlist:
+                if verlist[i][0] == AgentFileVer:
+                    tempver = i
     if os.path.isfile(corePath) == True:
        for i in verlist:
            if verlist[i][0] == coreVer:
                 tempver = i
-
     return tempver
 
 
@@ -82,13 +87,13 @@ def updateproc():
         print saat(), "Mevcut Versiyon %s" % verlist[curr_vers()][0]
         print saat(), "Uygulama son surum olan %s versiyonuna yukseltilecek" % verlist[last_ver][0]
         while currentversion != last_ver:
-            dl_update(verlist[nextversion][1])
+            #dl_update(verlist[nextversion][1])
             print saat(), "Guncelleme surumu %s yuklenecek." % verlist[nextversion][0]
-            subprocess.call("%s\%s /SILENT /SUPPRESSMSGBOXES" % (updatesDir, verlist[nextversion][1]))
+            #subprocess.call("%s\%s /SILENT /SUPPRESSMSGBOXES" % (updatesDir, verlist[nextversion][1]))
             nextversion += 1
             currentversion += 1
             if currentversion == last_ver:
-                print saat(), "Guncelleme Islemi bitti. Uygulama Surumu %s" % verlist[curr_vers()][0]
+                print saat(), "Guncelleme Islemi bitti. Uygulama Surumu %s" % verlist[currentversion][0]
 
 updateproc()
 raw_input()

@@ -26,7 +26,7 @@
       <file leaf-file-name="Autoupdate.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Autoupdate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="16" selection-start="1537" selection-end="1537" vertical-scroll-proportion="1.2592592" vertical-offset="255" max-vertical-offset="1700">
+            <state line="76" column="0" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.3963068" vertical-offset="1013" max-vertical-offset="1768">
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="7" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -49,6 +49,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -65,7 +73,7 @@
     <option name="width" value="1616" />
     <option name="height" value="886" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -116,12 +124,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../test/test.py" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -368,16 +376,48 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Autoupdate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="40" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+        <state line="27" column="21" selection-start="947" selection-end="947" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1683">
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/test.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="41" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="901">
+        <state line="7" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Autoupdate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="36" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="1030" max-vertical-offset="1700">
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Autoupdate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="16" selection-start="1537" selection-end="1537" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1700">
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
           <folding />
         </state>
       </provider>
@@ -393,16 +433,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../test/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="833">
-          <folding />
+        <state line="38" column="41" selection-start="1910" selection-end="1910" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Autoupdate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="40" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../test/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="60" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.70028406" vertical-offset="0" max-vertical-offset="901">
-          <folding />
-        </state>
+        <state line="1" column="6" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="60" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.70028406" vertical-offset="0" max-vertical-offset="901" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
@@ -414,7 +464,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Autoupdate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="16" selection-start="1537" selection-end="1537" vertical-scroll-proportion="1.2592592" vertical-offset="255" max-vertical-offset="1700">
+        <state line="76" column="0" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.3963068" vertical-offset="1013" max-vertical-offset="1768">
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
